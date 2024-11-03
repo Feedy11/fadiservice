@@ -1,0 +1,14 @@
+{
+    "posts": [
+      { "id": 1, "title": "First post", "content": "This is the first post content" },
+      { "id": 2, "title": "Second post", "content": "This is the second post content" }
+    ],
+    "comments": [
+      { "id": 1, "postId": 1, "comment": "Great post!" },
+      { "id": 2, "postId": 1, "comment": "Thanks for sharing!" }
+    ]
+  }
+  {
+    "title": "New post",
+    "content": "This is the new post content"
+  }  

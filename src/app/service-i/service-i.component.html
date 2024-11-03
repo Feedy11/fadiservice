@@ -1,0 +1,14 @@
+<!-- src/app/message-list/message-list.component.html -->
+
+<div style="text-align:center">
+    <h2>Bienvenu Ecrire un message :</h2>
+    <input type="text" [(ngModel)]="Message" placeholder="Écrire un message..." />
+    <button (click)="addMessage()">Ajouter</button>
+    <button (click)="removeLastMessage()">Supprimer</button>
+  
+    <h3>Messages :</h3>
+    <ul>
+      <li *ngFor="let message of messages">{{ message }}</li>
+    </ul>
+  </div>
+  

@@ -1,6 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+// src/main.ts
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
+import { DataService } from './app/data.service'; // Import du service
+
+bootstrapApplication(AppComponent, {
+  providers: [DataService] // Fournit le service directement ici
+}).catch(err => console.error(err));
